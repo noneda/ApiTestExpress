@@ -87,10 +87,10 @@ classDiagram
         + exec(sql: string, callback: Function)
     }
 
-    index.js --|> server.js
-    server.js --|> sql.js
-    server.js --> Express
-    sql.js --> SQLite
+    index --|> server
+    server --|> sql
+    server --> Express
+    sql --> SQLite
 ```
 
 ## Diagrama de Flujo 
