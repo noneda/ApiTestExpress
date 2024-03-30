@@ -58,11 +58,11 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 ```mermaid
 classDiagram
-    class index.js {
+    class index{
         - app: Express
         - HTTP_PORT: number
     }
-    class server.js {
+    class server{
         - app: Express
         - db: SQLite
         + getAllUsers()
@@ -71,7 +71,7 @@ classDiagram
         + updateUser(id: number, name: string, type: number)
         + deleteUser(id: number)
     }
-    class sql.js {
+    class sql{
         - db: SQLite
     }
     class Express {
