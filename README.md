@@ -56,7 +56,7 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 ## Diagrama de Clases
 
-'''mermaid
+```mermaid
 classDiagram
     class index.js {
         - app: Express
@@ -91,11 +91,11 @@ classDiagram
     server.js --|> sql.js
     server.js --> Express
     sql.js --> SQLite
-'''
+```
 
 ## Diagrama de Flujo 
 
-'''
+```mermaid
 flowchart TD
     subgraph "Inicio del Programa"
         A(Inicio) --> B{¿Archivo DB existe?}
@@ -125,10 +125,10 @@ flowchart TD
     R -- No --> U(Enviar Error)
     T --> E
     U --> E
-'''
+```
 
 ## Diagrama de Sequencia 
-'''
+```mermaid
 sequenceDiagram
     participant Client
     participant index.js
@@ -153,4 +153,4 @@ sequenceDiagram
     sql.js->>server.js: Retorna los datos de la base de datos
     server.js->>index.js: Retorna respuesta HTTP
     index.js->>Client: Envía respuesta al cliente
-'''
+```
